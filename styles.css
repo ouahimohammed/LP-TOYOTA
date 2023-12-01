@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+li{list-style: none;}
+a{text-decoration: none;}
+header{
+    width: 100%;
+    height:80px;
+    position: relative;
+    background: #0082e6;
+
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+.container{
+    width: 90%;
+    max-width:1920px;
+    margin: 0 auto;
+}
+header nav {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+header nav ul {
+    display: flex;
+    margin-right: 20px;
+    width: 400px;
+    justify-content: space-evenly;
+}
+header nav .logo{
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 26px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    float:right;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    header nav ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      flex-direction: column;
+
+    }
+    nav ul li{
+        flex-direction: column;
+        margin: 10px 0;
+        line-height: 3px;
+      }
+      nav ul li a{
+        font-size: 20px;
+      }
+      a:hover,a.active{
+        background: none;
+        color: #0082e6;
+      }
+      #check:checked ~ ul{
+        left: 0;
+      }
+    }
+    section{
+        background: url(bg1.jpg) no-repeat;
+        background-size: cover;
+        height: calc(100vh - 80px);
+      }
+.content0 {
+    margin-top: 60px;
+    text-align: center;
+}
+.content0 h1{
+    font-size: 80px;
+    font-weight: bold;
+}
+.content0 p{
+    font-size: 20px;
+    margin-left: 10px;
+    font-style: italic;
+    font-weight: 500;
+}
+.content1 {
+    width: 100%;
+    height:700px;
+    display: flex;
+    margin-top: 200px;
+}
+.content1 img{
+    width: 900px;
+    height: 500px;
+}
+.content1 .im2{
+    width: 159px;
+    height: 199px;
+    margin:-95px auto 0 20px;
+    position: relative;
+
+}
+.content1 .carte1{
+    position:relative;
+    width: 200px;
+    margin-top: 50px;
+    margin:-71px auto 0 -33px;
+}
+.content1 .carte1 h1{
+    font-size:3rem;
+    margin: 74px -234px 0;
+    text-transform:none;
+    line-height: 1.1;
+    font-weight: 600;
+}
+.content1 .carte1 p{
+    font-style: italic;
+    margin-left: -90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1.125rem;
+    position: relative;
+}
+.content1 .carte1 button{
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-left: -95px;
+    width:150px;
+    background-image: linear-gradient(to right, #7d69b7, #b095f6);
+    color: white;
+    border:none;
+    text-decoration: none;
+}
+.content1 .carte1 button a{
+    text-decoration: none;
+    color:white;
+}
+.content2 {
+    width: 100%;
+    height:700px;
+    display: flex;
+    margin-top: 60px;
+}
+.content2 .carte2 {
+    width:-200px ;
+}
+.content2 img {
+    width: 1022px;
+    height: 505px;
+}
+.content2 .carte2 h1{
+    font-size:2.6rem;
+    margin: 70px 92px 0;
+    line-height: 1.1;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.content2 .carte2 p{
+    font-style: italic;
+    margin-left: 96px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1.150rem;
+    position: relative;
+}
+.content2 .carte2 button{
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-left: 96px;
+    width:150px;
+    background-image: linear-gradient(to right, #222222, #131313);
+    color: white;
+    border:none;
+    text-decoration: none;
+}
+.content2 .carte2 button a{
+    text-decoration: none;
+    color:white;
+}
+
+.content3 {
+    width: 100%;
+    height:700px;
+    display: flex;
+    margin-top: 200px;
+}
+.content3 img{
+    width: 900px;
+    height: 500px;
+}
+.content3 .img3{
+    width: 159px;
+    height: 199px;
+    margin:-99px auto 0 48px;
+    position: relative;
+
+}
+.content3 .carte3{
+    position:relative;
+    width: 200px;
+    margin-top: 50px;
+    margin:-71px auto 0 -33px;
+}
+.content3 .carte3 h1{
+    font-size:2.5rem;
+    margin: 58px -188px 0;
+    text-transform:none;
+    line-height: 1.1;
+    font-weight: 600;
+}
+.content3 .carte3 p{
+    font-style: italic;
+    margin-left: -187px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1.125rem;
+    position: relative;
+}
+.content3 .carte3 button{
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-left: -195px;
+    width:150px;
+    background-image: linear-gradient(to right, #7d69b7, #b095f6);
+    color: white;
+    border:none;
+    text-decoration: none;
+}
+.content3 .carte3 button a{
+    text-decoration: none;
+    color:white;
+}
+
+.content4 {
+    width: 100%;
+    height:700px;
+    display: flex;
+}
+
+.content4 img {
+    width: 1022px;
+    height: 505px;
+    margin-left: -290px;
+}
+.content4 .carte4 {
+    width: 600px;
+    margin-left: 100px;
+}
+.content4 .carte4 h1{
+    font-size:2.6rem;
+    margin: 68px 84px 0;
+    line-height: 1.1;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.content4 .carte4 p{
+    font-style: italic;
+    margin-left: 96px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 1.0rem;
+    position: relative;
+}
+.content4 .carte4 button{
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-left: 96px;
+    width:150px;
+    background-image: linear-gradient(to right, #222222, #131313);
+    color: white;
+    border:none;
+    text-decoration: none;
+}
+.content4 .carte4 button a{
+    text-decoration: none;
+    color:white;
+}
+.content5 {
+    width: 100%;
+    height:500px;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(140,140,255,1) 100%);
+    position: relative;;
+}
+.content5 .shapes2 {
+    background-color: white;
+    width: 600px;
+    height: 250px;
+    float:right;
+    border-top-left-radius:100px ;
+    border-bottom-left-radius:100px ;
+    position: relative;
+    margin-left: 998px;
+    margin-top: 117px;
+}
+.content5 .mjmou3in {
+    display: flex;
+    position: relative;
+}
+.content5 .mjmou3in p{
+    margin-top: 155px;
+    width: 600px;
+    position: absolute;
+    margin-left: 147px;
+    color: white;
+}
+.content5 .shapes2 .carte5{
+    margin-right: 30px;
+    position: absolute;
+    margin-top: 65px;
+    margin-left: 95px;
+}
+.content5 .shapes2 .carte5 h1{
+    font-size: 2rem;
+}
+.content5 .shapes2 .carte5 button{
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-left: -2px;
+    width:150px;
+    background-image: linear-gradient(to right, #222222, #131313);
+    color: white;
+    border:none;
+    text-decoration: none;
+    margin: 10px;
+}
+.content5 .shapes2 .carte5 button a{
+    text-decoration: none;
+    color: white;
+}
+.content6 {
+    width: 100%;
+    height:700px;
+    display: flex;
+}
+.content6 img{
+    width: 900px;
+    height: 500px;
+}
+.content6 .im6{
+    width: 159px;
+    height: 199px;
+    margin:60px auto 0 20px;
+    position: relative;
+
+}
+.content6 .carte6{
+    position:relative;
+    width: 200px;
+    margin-top: 50px;
+    margin:63px auto 0 -25px;
+  
+}
+.content6 .carte6 h1{
+    font-size:3rem;
+    margin: 74px -234px 0;
+    text-transform:none;
+    line-height: 1.1;
+    font-weight: 600;
+}
+.content6 .carte6 p{
+    font-style: italic;
+    margin-left: -199px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1.125rem;
+    position: relative;
+}
+.content6 .carte6 button{
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-left: -200px;
+    width:150px;
+    background-image: linear-gradient(to right, #7d69b7, #b095f6);
+    color: white;
+    border:none;
+    text-decoration: none;
+}
+.content6 .carte6 button a{
+    text-decoration: none;
+    color:white;
+}
+.content7 {
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+.content7 img{
+    width: 129px;
+    height: 199px;
+    margin:60px auto 0 70px;
+    position: relative;
+
+}
+.content7 .carte7{
+    position:relative;
+    width: 200px;
+    margin:63px auto 0 -820px;
+  
+}
+.content7 .carte7 h1{
+    font-size:2rem;
+    margin: 74px -234px 0;
+    font-weight: 600;
+}
+.content7 .carte7 p{
+    font-style: italic;
+    margin-left: -199px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 1rem;
+    position: relative;
+}
+
+footer{
+    width: 100%;
+    height:500px;
+    background-color: #222222;
+    text-align: center;
+   
+}
+footer ul {
+    display: flex;
+    color: white;
+    list-style: none;
+    padding: 20px;
+    margin-left:182px;
+}
+footer ul li{
+    text-decoration: none;
+    padding: 60px;
+    padding-right: 100px;
+    margin-left: 100px;
+}
+footer ul a {
+    text-decoration: none;
+    color: white;
+}
+footer .logo{
+    font-weight:bold ;
+    font-size: 30px;
+    color: white;
+  
+}
+ul .social {
+    margin: 0 auto;
+
+}
+ .imgs {
+ margin: 30px;
+ display: inline-block;
+   
+}
+.copyright {
+    text-align: center;
+    color: #f7f5f5; 
+    font-size: 14px; 
+ }
+.content8{
+    width: 100%;
+    height: 700px;
+}
+.content8   img{
+    width: 100%;
+    height: 700px;
+}
